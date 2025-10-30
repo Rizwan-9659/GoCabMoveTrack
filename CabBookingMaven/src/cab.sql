@@ -57,7 +57,7 @@ use cab_booking;
 );
 -------------------------------------------------------------------------------------------------
 5.Payments
-	CREATE TABLE payment (
+	CREATE TABLE payments (
     payment_id INT(11) NOT NULL AUTO_INCREMENT,
     booking_id INT(11),
     amount DOUBLE,
@@ -69,5 +69,6 @@ use cab_booking;
     FOREIGN KEY (booking_id) REFERENCES booking(booking_id) ON DELETE CASCADE
 );
 -------------------------------------------------------------------------------------------------
+
 
 
